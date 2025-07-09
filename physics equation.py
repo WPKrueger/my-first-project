@@ -1,5 +1,6 @@
 import inquirer
 import re
+#this was a previous method that didn't work as well as I wanted
 """
 questions = [
     inquirer.Text('name', message="What's your name"),
@@ -11,7 +12,7 @@ answers = inquirer.prompt(questions)
 print(answers[3])
 """
 
-
+#this is the original code that I studied in order to ask the initial questions
 """
 #Prompt the user for their name
 name = input("Please enter your name:")
@@ -32,7 +33,7 @@ except ValueError:
 
 
 
-#this method works but doesn't allow for decimals
+#this method works but doesn't allow for decimals and is much more complicated
 """
 v1_str = input("What is the initial velocity (m/s)? ")
 v1 = int(v1_str)
@@ -60,6 +61,8 @@ t = float(input("What is the time (s)? "))
 v2 = v1 + a*t
 
 print(f"Final velocity is {v2} (m/s).")
+
+#Actual code start HERE
 """
 from pprint import pprint
 
